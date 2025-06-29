@@ -83,7 +83,7 @@ const About = () => {
         <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 lg:px-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-20  lg:px-8">
         {/* Hero Section */}
         <div className="text-center mb-20">
           <h1 className="mb-8 text-5xl md:text-6xl lg:text-7xl font-black leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-purple-200 animate-fade-in">

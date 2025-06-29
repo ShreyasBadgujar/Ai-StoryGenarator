@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -73,18 +74,19 @@ const Navbar = () => {
               <NavLinkComponent to="/" exact>Home</NavLinkComponent>
             </li>
             <li>
-              <NavLinkComponent to="/about">About</NavLinkComponent>
+              <NavLinkComponent to="about">About</NavLinkComponent>
             </li>
             <li>
-              <NavLinkComponent to="/contact">Contact</NavLinkComponent>
+              <NavLinkComponent to="contact">Contact</NavLinkComponent>
             </li>
             <li className="md:ml-4 ">
-              <a 
-                href="story-genration"
+              <NavLink 
+                to="story-genration"
+                onClick={()=>window.scrollTo(0,0)}
                 className="block py-2 px-4 text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 font-medium text-center"
               >
                 Create Story
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
